@@ -12,6 +12,18 @@
 @class Contender;
 @class Election;
 
+@interface VotingSimulator : NSObject
+-(void)runSimulation;
+@end
+
+@implementation VotingSimulator
+-(void)runSimulation {
+    
+}
+    
+
+@end
+
 // Contender class
 @interface Contender : NSObject
 
@@ -205,6 +217,11 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        
+        VotingSimulator *simulator = [[VotingSimulator alloc]init];
+        [simulator runSimulation];
+        
+        
         
     }
     return 0;
